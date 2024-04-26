@@ -5,8 +5,8 @@ import numpy as np
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Load the filter image (example: sunglasses)
-# filter_img = cv2.imread('sunglasses.png', -1)
-filter_img = cv2.imread('sunglasses_nobg.png', -1)
+filter_img = cv2.imread('sunglasses.png', -1)
+# filter_img = cv2.imread('sunglasses_nobg.png', -1)
 
 # Function to overlay the filter on the face
 def overlay_filter(face_img, filter_img, x, y, w, h):
